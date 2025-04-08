@@ -62,4 +62,40 @@ dinâmicas e responsivas.
 ##
 
 ### Passo a Passo de instalção 
+- criei uma pasta chamada catalogo pode ser qualquer coisa depende do projeto
+![imagem do pronpt de instalção React](img_README/image.png)
+
+- subtituir nome
+
+![](img_README/img2.png)
+
+- selecionar com as setinhas
+
+![](img_README/img-3.png)
+
+- instalando o vite
+
+![](img_README/instalando_vite.png)
+
+- vai aparecer um endereco **cltrl + mouse** e baixando react !!!
+- executar ```npm run dev```
+
+![](img_README/npm%20run%20dev.png)
+
+**Oque deve aparecer !**
+
+![](img_README/oque%20deve%20aparecer.png)
+
+#
+
+- dentro da catalogo vai ter outra catalogo kk ( obs: o nome do projeto e opcional )
+
+![pastas](img_README/pastas.png)
+
+- visto isso voce comclui as instalações
+
+- dentro da pasta src voce irá começar seu desenvolvimento.
+### **A pasta src em projetos React é o local onde você deve colocar o código fonte da sua aplicação, incluindo componentes, páginas, estilos e outros arquivos**
+
+![](img_README/src.png)
 
