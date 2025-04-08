@@ -3,6 +3,7 @@ import axios from "axios";
 //as ferramentas começadas com use são hooks de manuseio da biblioteca React
 import React, {useState, useEffect} from "react";
 import { Card } from './Card';
+import { Modal } from "./Modal";
 import estilos from './Lista.module.css';
 
 const API_key = 'af26cce282aecf5c6cc39a264f29d0a7';
@@ -11,6 +12,8 @@ const API_URL = 'https://api.themoviedb.org/3';
 export function Lista(){
     //crio uma variavel chamada movie, e "seto" o estado dela como vazio
     const [movies, setMovie] = useState([]);
+    //mostra de foi selecionado um filme para a vizualização 
+    const [SelectedMovie, setSelectedMovie] = useState(null)
     
     //Efect trabalha com uma estruta especifica parametros (), script {}, e dependencias []
 
@@ -27,14 +30,26 @@ export function Lista(){
             });
     },[])
 
+
+    const handleOpenModal =(movie)=>{
+        setSelectedMovie(movie);
+    };
+
+    const handleCloseModal=() =>{
+        setSelectedMovie(null);
+    };
+
+
     return(
         <div className={estilos.conteiner}>
             <figure style ={{display:'flex', flexWrap:'wrap'}}>
                 {movies.map(movie=>(
                     <Card key={movie.id}
-                    movie={movie}/>
+                    movie={movie}
+                    onOpenModal = {handleOpenModal}/>
                 ))}
             </figure>
+            {setSelectedMovie && (<Modal movie={SelectedMovie} onClose={handleCloseModal}/>)}
         </div>
     );
 }
