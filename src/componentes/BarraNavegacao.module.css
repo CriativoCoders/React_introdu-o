@@ -1,12 +1,12 @@
 .conteiner{
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 80px;
 }
 
 .conteiner ul{
     display: flex;
-    gap: 15px;
+    gap: 56px;
     list-style-type: none;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
     display: flex;
 }
