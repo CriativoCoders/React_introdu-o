@@ -99,3 +99,7 @@ dinâmicas e responsivas.
 
 ![](img_README/src.png)
 
+
+- Estrutura de pastas e arquivos
+![](img_README/Captura%20de%20tela%202025-04-15%20110153.png)
+
